@@ -8,7 +8,12 @@ const unstyledList = {
         title: ''
     },
     init: function(){
-        this.viewModel.items = this.items;
+        this.viewModel.items = this.data.map(item => {
+            return {
+                href: '#',
+                text: item
+            }
+        });
         this.viewModel.title = this.title;
         this.base();
     }

@@ -5,12 +5,7 @@ import features from './fixtures/features-data';
 const featuresListConfig = pz.assignTo(list, {
     renderTo: 'div.features',
     title: 'Features',
-    items: features.map(feature => {
-        return {
-            href: '#',
-            text: feature
-        }
-    })
+    data: features
 });
 
 export default pz.define('features-list', featuresListConfig);
