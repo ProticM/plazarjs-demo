@@ -19,8 +19,15 @@ const jumbo = {
 		}, {
 			text: 'Demo source code',
 			appearance: 'outline-primary',
+			css: ['mr-2'],
 			onClick: () => {
 				window.location = 'https://github.com/ProticM/plazarjs-demo';
+			}
+		}, {
+			text: 'Check out the docs',
+			appearance: 'outline-primary',
+			onClick: () => {
+				window.location = 'http://www.plazarjs.com';
 			}
 		}]
 	}

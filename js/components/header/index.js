@@ -10,20 +10,12 @@ const header = {
 	renderTo: 'header',
 	autoLoad: true,
 	replace: true,
-	css: ['p-3', 'bg-white', 'border-bottom', 'shadow-sm'],
+	css: ['p-3', 'border-bottom', 'shadow-sm'],
     brand: {
         type: 'text',
         value: 'PlazarJS example',
     },
-    menu: menu,
-    components: [{
-        type: 'ui-bootstrap-button',
-        appearance: 'outline-primary',
-        text: 'Check out the docs',
-        onClick: () => {
-            window.location = 'http://www.plazarjs.com';
-        }
-    }]
+    menu: menu
 };
 
 export default navbar.extend(header);
