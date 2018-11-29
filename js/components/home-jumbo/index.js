@@ -6,14 +6,21 @@ const jumbo = {
 	fluid: true,
 	jumbotron: {
 		title: {
-			text:'PlazarJS Demo',
+			text:'PlazarJS Bootstrap UI demo page',
 			size: 4
 		},
-		leadText: 'Easily create application layouts using PlazarJS Bootstrap-UI',
+		leadText: 'Easily create application layouts using PlazarJS Bootstrap UI',
 		buttons: [{
-			text: 'Star us on GitHub',
+			text: 'Star PlazarJS on GitHub',
+			css: ['mr-2'],
 			onClick: () => {
 				window.location = 'https://github.com/ProticM/plazar-js';
+			}
+		}, {
+			text: 'Demo source code',
+			appearance: 'outline-primary',
+			onClick: () => {
+				window.location = 'https://github.com/ProticM/plazarjs-demo';
 			}
 		}]
 	}

@@ -3,7 +3,7 @@ const tools = [
     'Babel',
     'UglifyJS',
     'Rollup.js',
-    'Bootstrap'
+    'ECMAScript'
 ];
 
 export default tools;

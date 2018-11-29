@@ -4,7 +4,7 @@ import tools from './fixtures/tools-data';
 
 const toolsListConfig = pz.assignTo(list, {
     renderTo: 'div.tools',
-    title: 'Tools',
+    title: 'Built with',
     data: tools
 });
 

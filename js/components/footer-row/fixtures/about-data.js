@@ -1,9 +1,9 @@
 const about = [
-    'Team',
-    'Location',
-    'Privacy',
-    'Terms',
-    'Contact'
+    'OpenSource',
+    'Licensed under the MIT',
+    'Available on NPM',
+    'ECMAScript in focus',
+    'Available via CDN'
 ];
 
 export default about;
