@@ -1,3 +1,4 @@
+// here we just want to create the jumbotron with some setup, no need to extend it
 const jumbo = {
 	type: 'ui-bootstrap-container',
 	renderAs: 'jumbotron',
