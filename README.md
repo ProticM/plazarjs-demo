@@ -6,8 +6,8 @@ Demo application built with plazarjs framework
 Clone the repository and run the following commands:
 
 ```javascript
-npm install
-npm run rollup
+$ npm install
+$ npm run rollup
 ```
 
 Open the index.html page.
