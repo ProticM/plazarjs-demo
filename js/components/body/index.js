@@ -11,9 +11,9 @@ const body = {
 		css: ['cards-container'],
 		components: [
 			cardDeck, 
-			footerRow
+			grid
 		]
-	}, grid],
+	}, footerRow],
 	fluid: true,
 	renderTo: 'main',
 	replace: true,
