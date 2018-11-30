@@ -1,0 +1,12 @@
+<table class="table">
+<thead>
+    <tr>
+        <th scope="col" data-each="columns" data-attr-[data-colidx]="$index" data-attr-[data-dindex]="dataIndex" data-html="text"></th>
+    </tr>
+</thead>
+<tbody>
+    <tr data-each="data as row" data-visible="data.hasData">
+        <td data-each="$root.columns" data-attr-[data-rowidx]="$root.getRowIndex" data-attr-[data-colidx]="$index" data-text="$root.getColumnValue" data-attr-[data-dindex]="dataIndex"></td>
+    </tr>
+</tbody>
+</table>
