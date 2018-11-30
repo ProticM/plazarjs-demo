@@ -1,4 +1,5 @@
-// here we just want to create the jumbotron with some setup, no need to extend it
+// here we just want to create the jumbotron with some setup, no need to extend or define it, we can just export the config. The type of 'ui-bootstrap-container' was already defined
+// when we registered our bootstrap-ui plugin
 const jumbo = {
 	type: 'ui-bootstrap-container',
 	renderAs: 'jumbotron',
