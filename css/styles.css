@@ -8,3 +8,11 @@ a {
 .home-jumbo {
 	max-width: 700px;
 }
+
+.table .thead-light th {
+	background-color: rgba(0, 0, 0, 0.03)
+}
+
+.cursor-pointer {
+	cursor: pointer
+}

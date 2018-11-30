@@ -3,6 +3,7 @@ import homeJumbo from '../home-jumbo';
 import cardDeck from '../home-cards';
 import footerRow from '../footer-row';
 import grid from '../grid';
+import '../title';
 
 const body = {
 	ownerType: 'ui-bootstrap-container',
@@ -11,6 +12,11 @@ const body = {
 		css: ['cards-container'],
 		components: [
 			cardDeck, 
+			{
+				type: 'title-component', // our custom created type, also registered with storeDefinition
+				size: '5',
+				text: 'Simple grid example:'
+			},
 			grid
 		]
 	}, footerRow],

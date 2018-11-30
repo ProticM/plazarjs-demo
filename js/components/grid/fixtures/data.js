@@ -1,28 +1,29 @@
 const tempData = [[
     {
-        dataIndex: 'id',
-        value: '1'
+        dataIndex: 'name',
+        value: 'Mike Tyson'
     },
     {
-        dataIndex: 'title',
-        value: 'Title 1'
-    },
-    {
-        dataIndex: 'description',
-        value: 'Description 1'
+        dataIndex: 'winsByKo',
+        value: '44'
     }
 ],[
     {
-        dataIndex: 'id',
-        value: '2'
+        dataIndex: 'name',
+        value: 'Evander Holyfield'
     },
     {
-        dataIndex: 'title',
-        value: 'Title 2'
+        dataIndex: 'winsByKo',
+        value: '29'
+    }
+],[
+    {
+        dataIndex: 'name',
+        value: 'Muhammad Ali'
     },
     {
-        dataIndex: 'description',
-        value: 'Description 2'
+        dataIndex: 'winsByKo',
+        value: '37'
     }
 ]];
 
