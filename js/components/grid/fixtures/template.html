@@ -1,7 +1,10 @@
 <table class="table table-bordered grid">
 <thead class="thead-light">
     <tr>
-        <th class="cursor-pointer grid-head-col" scope="col" data-each="columns" data-attr-[data-colidx]="$index" data-attr-[data-dindex]="dataIndex">{text}&nbsp;<span>&#8679;</span></th>
+        <th class="cursor-pointer grid-head-col" scope="col" data-each="columns" data-attr-[data-colidx]="$index" data-attr-[data-dindex]="dataIndex">
+            {text}
+            <span class="ml-2 green" data-visible="sorter">&#9679;</span>
+        </th>
     </tr>
 </thead>
 <tbody>
