@@ -41,7 +41,8 @@ const grid = {
     },
     sortBy: function(sortKey) { 
         let column = pz.find(col => { return col.dataIndex().toLowerCase().trim() == sortKey.trim() }, this.viewModel.columns);
-        this.clearSort(sortKey, column);
+        this.sortKey = sortKey;
+        this.clearSort(column.dataIndex().toLowerCase().trim());
 
         column.sorter = column.sorter() * -1;
         this.viewModel.data.sort((a, b) => {
@@ -49,10 +50,10 @@ const grid = {
             let val2 = pz.find(col => { return col.dataIndex.toLowerCase().trim() == sortKey.trim() }, b).value;
             return (val1 == val2 ? 0 : val1 > val2 ? 1 : -1) * column.sorter();
         });
-        this.sortKey = sortKey;
+        
     },
     clearSort: function(column) {
-        if(this.sortKey == column.dataIndex().toLowerCase().trim()) {
+        if(this.sortKey == column) {
             return;
         };
 

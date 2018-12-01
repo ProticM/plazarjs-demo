@@ -3,14 +3,14 @@
 const jumbo = {
 	type: 'ui-bootstrap-container',
 	renderAs: 'jumbotron',
-	css: ['bg-white border-bottom'],
+	css: ['bg-white', 'border-bottom', 'm-0'],
 	fluid: true,
 	jumbotron: {
 		title: {
-			text:'PlazarJS Bootstrap UI demo page',
+			text:'PlazarJS/Bootstrap-UI/ECMAScript demo',
 			size: 4
 		},
-		leadText: 'Easily create application layouts using PlazarJS Bootstrap UI',
+		leadText: 'Easily create application layouts using PlazarJS Bootstrap-UI',
 		buttons: [{
 			text: 'Star PlazarJS on GitHub',
 			css: ['mr-2'],

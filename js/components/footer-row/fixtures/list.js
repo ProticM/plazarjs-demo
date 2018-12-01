@@ -1,4 +1,4 @@
-import tpl from './template.html';
+import tpl from './list-template.html';
 
 const unstyledList = {
     ownerType: 'component',

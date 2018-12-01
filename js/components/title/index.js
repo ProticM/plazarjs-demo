@@ -4,7 +4,7 @@ const title = {
     ownerType: 'component',
     size: 1,
     text: 'Title',
-    css: ['mt-4', 'mb-4'],
+    css: ['pt-3', 'pb-2', 'mb-3', 'border-bottom'],
     load: function() {
         this.template = pz.str.format('<h{0}>{1}</h{2}>', this.size, this.text, this.size);
         this.base();

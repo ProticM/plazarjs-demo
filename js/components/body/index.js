@@ -11,6 +11,11 @@ const body = {
 		type: 'ui-bootstrap-container', // we can easily create our components in a declarative way since we have registered the entire bootstrap-ui plugin.
 		css: ['cards-container'],
 		components: [
+			{
+				type: 'title-component',
+				size: '5',
+				text: 'Overall:'
+			},
 			cardDeck, 
 			{
 				type: 'title-component', // our custom created type, also registered with storeDefinition
