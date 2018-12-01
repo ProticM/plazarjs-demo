@@ -1,5 +1,5 @@
 # plazarjs-demo
-Demo application built with plazarjs framework. <a class="github-button" href="https://github.com/ProticM/plazar-js" data-icon="octicon-star" data-show-count="true" aria-label="Star ProticM/plazar-js on GitHub">Star</a>
+Demo application built with plazarjs framework. <a href="https://github.com/ProticM/plazar-js">Star plazarjs</a>
 
 # Usage
 
