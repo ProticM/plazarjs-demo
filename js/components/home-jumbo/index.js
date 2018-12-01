@@ -4,6 +4,7 @@ const jumbo = {
 	type: 'ui-bootstrap-container',
 	renderAs: 'jumbotron',
 	css: ['bg-white', 'border-bottom', 'm-0'],
+	style: 'word-break: break-all;',
 	fluid: true,
 	jumbotron: {
 		title: {

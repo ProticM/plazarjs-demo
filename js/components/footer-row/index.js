@@ -20,17 +20,23 @@ const footerRow = {
         css: ['m-0 main-row'],
         columns: [{
             size: {
-                sm: 4
+                lg: 4,
+                md: 4,
+                sm: 12
             },
             css: ['p-0 features']
         }, {
             size: {
-                sm: 4
+                lg: 4,
+                md: 4,
+                sm: 12
             },
             css: ['p-0 tools']
         }, {
             size: {
-                sm: 4
+                lg: 4,
+                md: 4,
+                sm: 12
             },
             css: ['p-0 about']
         }]
