@@ -1,9 +1,9 @@
 # plazarjs-demo
-Demo application built with plazarjs framework
+Demo application built with plazarjs framework. <a href="https://github.com/ProticM/plazar-js">Star plazarjs</a>
 
 # Usage
 
-Clone the repository and run the following commands:
+View a livedemo <a href="http://www.plazarjs.com/livedemo">here</a>, or clone the repository and run the following commands:
 
 ```javascript
 $ npm install
