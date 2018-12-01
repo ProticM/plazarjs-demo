@@ -14,19 +14,20 @@ const jumbo = {
 		leadText: 'Easily create application layouts using PlazarJS Bootstrap-UI',
 		buttons: [{
 			text: 'Star PlazarJS on GitHub',
-			css: ['mr-2'],
+			css: ['mr-2', 'btn-sm-block'],
 			onClick: () => {
 				window.location = 'https://github.com/ProticM/plazar-js';
 			}
 		}, {
 			text: 'Demo source code',
 			appearance: 'outline-primary',
-			css: ['mr-2'],
+			css: ['mr-2', 'btn-sm-block'],
 			onClick: () => {
 				window.location = 'https://github.com/ProticM/plazarjs-demo';
 			}
 		}, {
 			text: 'Check out the docs',
+			css: ['btn-sm-block'],
 			appearance: 'outline-primary',
 			onClick: () => {
 				window.location = 'http://www.plazarjs.com';
