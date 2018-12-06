@@ -1,5 +1,5 @@
 const config = {
-	type: 'home-card',
+	ownerType: 'ui-bootstrap-card',
 	header: {
 		text: 'Easy To Use'
 	},

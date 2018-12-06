@@ -4,7 +4,6 @@ import config from './fixtures/cards-config';
 const clone = pz.obj.clone(config);
 
 const scalableCard = pz.assignTo(clone, {
-	ownerType: 'ui-bootstrap-card',
 	header: {
 		text: 'Scalable'
 	},

@@ -4,7 +4,6 @@ import config from './fixtures/cards-config';
 const clone = pz.obj.clone(config);
 
 const flexibleCard = pz.assignTo(clone, {
-	ownerType: 'ui-bootstrap-card',
 	header: {
 		text: 'Flexible'
 	},
