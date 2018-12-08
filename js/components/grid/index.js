@@ -9,19 +9,18 @@ const grid = {
         on: 'click',
         selector: 'th.grid-head-col',
         fn: function(el) {
-            let sortKey = el.getAttribute('data-dindex').toLowerCase().trim();
+            let sortKey = el.getAttribute('data-dindex');
             this.sortBy(sortKey);
         }
     }],
-    sortKey: 'name',
     viewModel: {
         columns: [{
             text: 'Name',
-            sorter: -1,
+            sorter: { value: 1, asc: true },
             dataIndex: 'name'
         }, {
             text: 'Wins by KO',
-            sorter: -1,
+            sorter: { value: 1, asc: true },
             dataIndex: 'winsByKo'
         }],
         data: data,
@@ -29,37 +28,27 @@ const grid = {
             return this.rootVm.data.indexOf(this.rootVm.row);
         },
         getColumnValue: function() {
-            let colIdx = this.el.getAttribute('data-colidx');
-            let rowIdx = this.el.getAttribute('data-rowidx');
-            let column = this.vm.data.getAt(rowIdx);
-            return column[colIdx].value;
+            let rootVm = this.rootVm;
+    	    return rootVm.row[rootVm.column.dataIndex()]();
         }
     },
     init: function() {
         this.base();
-        this.sortBy(this.sortKey);
+        this.sortBy('name');
     },
     sortBy: function(sortKey) { 
-        let column = pz.find(col => { return col.dataIndex().toLowerCase().trim() == sortKey.trim() }, this.viewModel.columns);
-        this.sortKey = sortKey;
-        this.clearSort(column.dataIndex().toLowerCase().trim());
-
-        column.sorter = column.sorter() * -1;
-        this.viewModel.data.sort((a, b) => {
-            let val1 = pz.find(col => { return col.dataIndex.toLowerCase().trim() == sortKey.trim() }, a).value;
-            let val2 = pz.find(col => { return col.dataIndex.toLowerCase().trim() == sortKey.trim() }, b).value;
-            return (val1 == val2 ? 0 : val1 > val2 ? 1 : -1) * column.sorter();
+        let column = pz.find(col => { return col.dataIndex() == sortKey }, this.viewModel.columns);
+        let sorter = column.sorter.value() * -1;
+        
+        column.sorter.asc = sorter > 0;
+        column.sorter.value = sorter;
+        
+        this.viewModel.data.sort(function(a, b) {
+            let val1 = a[sortKey]();
+            let val2 = b[sortKey]();
+            return (val1 == val2 ? 0 : val1 > val2 ? 1 : -1) * sorter;
         });
         
-    },
-    clearSort: function(column) {
-        if(this.sortKey == column) {
-            return;
-        };
-
-        pz.forEach(this.viewModel.columns, col => {
-            col.sorter = -1;
-        });
     }
 };
 

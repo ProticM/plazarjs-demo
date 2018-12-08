@@ -1,15 +1,16 @@
 <table class="table table-bordered grid mb-0">
 <thead class="thead-light">
     <tr>
-        <th class="cursor-pointer grid-head-col" scope="col" data-each="columns" data-attr-[data-colidx]="$index" data-attr-[data-dindex]="dataIndex">
+        <th class="cursor-pointer grid-head-col" scope="col" data-each="columns" data-attr-[data-dindex]="dataIndex">
             {text}
-            <span class="ml-2 green" data-visible="sorter">&#9679;</span>
+            <span data-visible="sorter.asc">&#8679;</span>
+            <span data-hidden="sorter.asc">&#8681;</span>
         </th>
     </tr>
 </thead>
 <tbody>
     <tr data-each="data as row" data-visible="data.hasData">
-        <td data-each="$root.columns" data-attr-[data-rowidx]="$root.getRowIndex" data-attr-[data-colidx]="$index" data-text="$root.getColumnValue" data-attr-[data-dindex]="dataIndex"></td>
+        <td data-each="$root.columns as column" data-attr-[data-rowidx]="$root.getRowIndex" data-text="$root.getColumnValue"></td>
     </tr>
 </tbody>
 </table>

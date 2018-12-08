@@ -1,30 +1,8 @@
-const tempData = [[
-    {
-        dataIndex: 'name',
-        value: 'Mike Tyson'
-    },
-    {
-        dataIndex: 'winsByKo',
-        value: '44'
-    }
-],[
-    {
-        dataIndex: 'name',
-        value: 'Evander Holyfield'
-    },
-    {
-        dataIndex: 'winsByKo',
-        value: '29'
-    }
-],[
-    {
-        dataIndex: 'name',
-        value: 'Muhammad Ali'
-    },
-    {
-        dataIndex: 'winsByKo',
-        value: '37'
-    }
-]];
+const tempData = [
+    { name: 'Evander Holyfield', winsByKo: 29  },
+    { name: 'Mike Tyson', winsByKo: 44  },
+    { name: 'Muhammad Ali', winsByKo: 37  },
+    { name: 'Joseph Frazier', winsByKo: 27  }
+];
 
 export default tempData;
