@@ -24,12 +24,10 @@ const grid = {
             dataIndex: 'winsByKo'
         }],
         data: data,
-        getRowIndex: function() {
-            return this.rootVm.data.indexOf(this.rootVm.row);
-        },
         getColumnValue: function() {
-            let rootVm = this.rootVm;
-    	    return rootVm.row[rootVm.column.dataIndex()]();
+            var row = this.rootVm.data[this.view.parent.index], 
+    		    column = this.rootVm.columns[this.view.index];
+    	    return row[column.dataIndex()]();
         }
     },
     init: function() {
