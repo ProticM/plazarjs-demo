@@ -16,6 +16,10 @@
   ],
   "author": "Miloš Protić <protic023@gmail.com> (https://github.com/ProticM)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ProticM/plazarjs-demo"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.0",
