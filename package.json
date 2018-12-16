@@ -17,10 +17,10 @@
   "author": "Miloš Protić <protic023@gmail.com> (https://github.com/ProticM)",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.2.0",
+    "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.0",
-    "@plazarjs/bootstrap-ui": "^2.1.1-alpha.2",
-    "@plazarjs/core": "^2.1.1-alpha.2",
+    "@plazarjs/bootstrap-ui": "^2.1.1",
+    "@plazarjs/core": "^2.1.1",
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.6",
